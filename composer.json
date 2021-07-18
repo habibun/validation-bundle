@@ -16,5 +16,13 @@
         "psr-4": {
             "Habibun\\ValidationBundle\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Habibun\\ValidationBundle\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^5.3"
     }
 }
