@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services
+        https://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="habibun_validation.validator" class="Habibun\ValidationBundle\Validator">
+            <argument type="service" id="habibun_validation.rule_provider"/>
+        </service>
+        <service alias="habibun_validation.validator" id="Habibun\ValidationBundle\Validator"/>
+
+        <service id="habibun_validation.rule_provider" class="Habibun\ValidationBundle\RuleProvider"/>
+        <service alias="habibun_validation.rule_provider" id="Habibun\ValidationBundle\RuleProvider"/>
+    </services>
+</container>
