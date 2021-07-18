@@ -1,0 +1,20 @@
+{
+    "name": "habibun/validation-bundle",
+    "description": "Integration bundle for Respect\\Validation in Symfony",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Habibun Noby",
+            "email": "habibun.noby@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Habibun\\ValidationBundle\\": "src/"
+        }
+    }
+}
